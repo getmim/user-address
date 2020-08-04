@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'user-address',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/user-address.git',
     '__license' => 'MIT',
     '__author' => [
@@ -35,6 +35,17 @@ return [
     ],
     'libFormatter' => [
         'formats' => [
+            'user' => [
+                'address' => [
+                    'type' => 'partial',
+                    'model' => [
+                        'name' => 'UserAddress\\Model\\UserAddress',
+                        'field' => 'user',
+                        'type' => 'number'
+                    ],
+                    'format' => 'user-address'
+                ]
+            ],
             'user-address' => [
                 'id' => [
                     'type' => 'number'
