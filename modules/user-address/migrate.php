@@ -67,20 +67,25 @@ return [
                 'attrs' => [],
                 'index' => 9000
             ],
+            'location' => [
+                'type' => 'TEXT',
+                'attrs' => [],
+                'index' => 10000
+            ],
             'updated' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP',
                     'update' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 10000
+                'index' => 11000
             ],
             'created' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 11000
+                'index' => 12000
             ]
         ]
     ]

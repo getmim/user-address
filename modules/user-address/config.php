@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'user-address',
-    '__version' => '0.0.2',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/user-address.git',
     '__license' => 'MIT',
     '__author' => [
@@ -115,6 +115,9 @@ return [
                 ],
                 'street' => [
                     'type' => 'text'
+                ],
+                'location' => [
+                    'type' => 'json'
                 ],
                 'updated' => [
                     'type' => 'date'
